@@ -21,8 +21,8 @@ export function OnboardingScreen({ onStart }: OnboardingScreenProps) {
   return (
     <div className="relative h-full overflow-hidden bg-gradient-to-b from-clinical-700 via-clinical-800 to-clinical-900">
       {/* Ambient glow */}
-      <div className="pointer-events-none absolute -left-16 top-10 h-64 w-64 rounded-full bg-clinical-400/30 blur-3xl" />
-      <div className="pointer-events-none absolute -right-20 top-48 h-72 w-72 rounded-full bg-mental/20 blur-3xl" />
+      <div className="pointer-events-none absolute left-0 top-10 h-52 w-52 rounded-full bg-clinical-400/30 blur-3xl sm:-left-16 sm:h-64 sm:w-64" />
+      <div className="pointer-events-none absolute right-0 top-48 h-56 w-56 rounded-full bg-mental/20 blur-3xl sm:-right-20 sm:h-72 sm:w-72" />
 
       <StatusBar dark />
 

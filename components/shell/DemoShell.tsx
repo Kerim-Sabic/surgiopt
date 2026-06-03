@@ -44,8 +44,9 @@ export function DemoShell() {
     <div className="relative min-h-screen">
       {/* Global header */}
       <header className="sticky top-0 z-40 border-b border-white/40 bg-white/55 backdrop-blur-xl">
-        <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-5 sm:px-8">
-          <Logo size="md" />
+        <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-3 sm:px-8">
+          <Logo size="md" className="hidden sm:flex" />
+          <Logo size="md" showWordmark={false} className="sm:hidden" />
           <div className="absolute left-1/2 -translate-x-1/2">
             <SegmentedControl<Surface>
               value={surface}
@@ -94,7 +95,7 @@ export function DemoShell() {
             className="relative flex min-h-[calc(100vh-4rem)] flex-col items-center px-4 pb-16 pt-8"
           >
             {/* Spotlight */}
-            <div className="pointer-events-none absolute left-1/2 top-24 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-clinical-300/25 blur-[120px]" />
+            <div className="pointer-events-none absolute left-1/2 top-24 h-[360px] w-[360px] -translate-x-1/2 rounded-full bg-clinical-300/25 blur-[100px] sm:h-[520px] sm:w-[520px] sm:blur-[120px]" />
 
             <div className="relative mb-7 text-center">
               <span className="inline-flex items-center gap-1.5 rounded-full bg-white/60 px-3 py-1 text-[12px] font-bold uppercase tracking-wide text-clinical-700 shadow-glass-sm">
